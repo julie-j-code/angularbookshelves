@@ -1,9 +1,12 @@
 <div class="row">
-  <div class="col-xs-12">
-    <img style="max-width:400px;" *ngIf="book.photo" [src]="book.photo">
-    <h1>{{ book.title }}</h1>
+  <div class="col-sm-6">
+    <h1 class="mb-5">{{ book.title }}</h1>
     <h3>{{ book.author }}</h3>
     <p>{{ book.synopsis }}</p>
-    <button class="btn btn-default" (click)="onBack()">Retour</button>
+    <button class="btn btn-primary mt-5" (click)="onBack()">Retour à la liste</button>
   </div>
+  <div class="col-sm-6">
+    <img class="img-fluid" *ngIf="book.photo" [src]="book.photo">
+  </div>
+
 </div>

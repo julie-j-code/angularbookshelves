@@ -16,10 +16,11 @@
                class="form-control"
                formControlName="password">
       </div>
-      <button class="btn btn-primary"
-              type="submit"
-              [disabled]="signinForm.invalid">Connexion</button>
+      <button class="btn btn-primary mt-5"
+              type="submit">
+              <!-- [disabled]="signinForm.invalid"> -->
+              Connexion</button>
     </form>
-    <p class="text-danger">{{ errorMessage }}</p>
+    <p class="text-danger mt-5">{{ errorMessage }}</p>
   </div>
 </div>
